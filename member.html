@@ -1,6 +1,219 @@
-{% extends "index.html" %}
-  
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Computer Vision Lab | Soongsil University</title>
+  <!-- Font Awesome -->
+  <!-- Bootstrap core CSS -->
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="./static/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="./static/css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 60vh;
+    }
+
+    @media (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #929FBA !important;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <div class="container">
+
+        <!-- Brand -->
+        <img style="margin-right:20px;" src="./static/img/svg/logo.svg"></img>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#research" target="_self">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#publication" target="_self">Publication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/member" target="_self">Members</a>
+            </li>
+          </ul>
+
+          <!-- Right
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://github.com/SSU-CVLAB" class="nav-link border border-light rounded"
+                target="_blank">
+                <i class="fab fa-github mr-2"></i>GitHub
+              </a>
+            </li>
+          </ul>
+          -->
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('./static/img/main/scene1.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                    <strong style="font-weight: bold; font-size: xxx-large;">Welcome to the SSU Computer Vision Laboratory</strong><br>
+                </h1>
+
+                <p>
+                    <strong>
+                      We researched and developed various topics in the field of computer vision under supervision of Prof. Gye-young Kim.
+We mainly focuses on having artificial intelligence close to humans by extracting, reconstructing, and recognizing information from digital images.
+Recently, our main areas of interest are deep learning, 3D human pose estimation, anomaly detection, and high-speed image analysis.
+                    </strong>
+                </p>
+
+                <p class="mb-4 d-none d-md-block">
+                  <strong></strong>
+                </p>
+
+                <a target="_blank" href="http://itrc.ssu.ac.kr/" class="btn btn-outline-white btn-lg">
+                    초고속영상기술연구센터 바로가기
+                  <i class="fas fa-archive ml-2"></i>
+                </a>
+              </div>
+              <!-- Content -->
+
+            </div>
+            <!-- Mask & flexbox options-->
+
+          </div>
+        </div>
+        <!--/First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('./static/img/main/scene2.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                    <strong style="font-weight: bold; font-size: xxx-large;">Welcome to the SSU Computer Vision Laboratory</strong><br>
+                </h1>
+
+                <p>
+                    <strong>
+                      We researched and developed various topics in the field of computer vision under supervision of Prof. Gye-young Kim.
+We mainly focuses on having artificial intelligence close to humans by extracting, reconstructing, and recognizing information from digital images.
+Recently, our main areas of interest are deep learning, 3D human pose estimation, anomaly detection, and high-speed image analysis.
+                    </strong>
+                </p>
+                <p class="mb-4 d-none d-md-block">
+                  <strong></strong>
+                </p>
+
+                <a target="_blank" href="http://itrc.ssu.ac.kr/" class="btn btn-outline-white btn-lg">
+                    초고속영상기술연구센터 바로가기
+                  <i class="fas fa-archive ml-2"></i>
+                </a>
+              </div>
+              <!-- Content -->
+
+            </div>
+            <!-- Mask & flexbox options-->
+
+          </div>
+        </div>
+        <!--/Second slide-->
+
+      </div>
+      <!--/.Slides-->
+
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+  </header>
+
+
   <!--Main layout-->
   <main>
     <div class="container">
@@ -17,7 +230,7 @@
 
           <!--Grid column 1-->
           <div class="col-lg-3 col-md-4 col-sm-4">
-            <img class="img-fluid z-depth-1-half" src="{{ url_for('static', filename='img/person/김계영.jpg') }}">
+            <img class="img-fluid z-depth-1-half" src="./static/img/person/김계영.jpg">
             <div style="height:30px"></div>
           </div>
           <!--/Grid column 1-->
@@ -102,11 +315,10 @@
 
         <!--Grid row-->
         <div class="row wow fadeIn">
-          {% for idx in range(master_list['total']) %}
           <!--Grid column 1-->
           <div class="col-lg-2 col-md-4 col-sm-4 col- p-4">
             <img class="img-fluid z-depth-1-half"
-                 src="{{ url_for('static', filename='img/person/' + master_list['image'][idx]) }}">
+                 src="./static/img/person/김민석.jpg">
           </div>
           <!--/Grid column 1-->
           <!--Grid column 2-->
@@ -117,8 +329,8 @@
                 <i class="fas fa-user fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h3 class="feature-title">{{master_list['name'][idx]}}</h3>
-                <p class="grey-text">{{master_list['position'][idx]}}</p>
+                <h3 class="feature-title">김민석</h3>
+                <p class="grey-text"></p>
               </div>
             </div>
             <!--/First row-->
@@ -131,14 +343,127 @@
               <div class="col-10">
                 <h4 class="feature-title">Contact</h4>
                 <p class="grey-text">
-                    {{master_list['contact'][idx]}}
+                    tkdzma8080@naver.com
                 </p>
               </div>
             </div>
             <!--/Second row-->
           </div>
           <!--/Grid column 2-->
-          {% endfor %}
+
+
+            <!--Grid column 1-->
+          <div class="col-lg-2 col-md-4 col-sm-4 col- p-4">
+            <img class="img-fluid z-depth-1-half"
+                 src="./static/img/person/변성훈.jpg">
+          </div>
+          <!--/Grid column 1-->
+          <!--Grid column 2-->
+          <div class="col-lg-4 col-md-8 col-sm-8 p-5">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-user fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h3 class="feature-title">변성훈</h3>
+                <p class="grey-text">Team Leader</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-envelope fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h4 class="feature-title">Contact</h4>
+                <p class="grey-text">
+                    Sunghoon@soongsil.ac.kr
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+          </div>
+          <!--/Grid column 2-->
+
+
+
+              <!--Grid column 1-->
+          <div class="col-lg-2 col-md-4 col-sm-4 col- p-4">
+            <img class="img-fluid z-depth-1-half"
+                 src="./static/img/person/김요환.jpg">
+          </div>
+          <!--/Grid column 1-->
+          <!--Grid column 2-->
+          <div class="col-lg-4 col-md-8 col-sm-8 p-5">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-user fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h3 class="feature-title">김요환</h3>
+                <p class="grey-text"></p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-envelope fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h4 class="feature-title">Contact</h4>
+                <p class="grey-text">
+                    redheal13@gmail.com
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+          </div>
+          <!--/Grid column 2-->
+
+
+
+        <!--Grid column 1-->
+          <div class="col-lg-2 col-md-4 col-sm-4 col- p-4">
+            <img class="img-fluid z-depth-1-half"
+                 src="./static/img/person/이진영.jpg">
+          </div>
+          <!--/Grid column 1-->
+          <!--Grid column 2-->
+          <div class="col-lg-4 col-md-8 col-sm-8 p-5">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-user fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h3 class="feature-title">이진영</h3>
+                <p class="grey-text"></p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-envelope fa-2x blue-text"></i>
+              </div>
+              <div class="col-10">
+                <h4 class="feature-title">Contact</h4>
+                <p class="grey-text">
+                    scifimov@naver.com
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+          </div>
+          <!--/Grid column 2-->
+
         </div>
         <!--/Grid row-->
 
@@ -155,66 +480,603 @@
 
         <!--Grid row-->
         <div class="row wow fadeIn">
-          {% for idx in range(alumni_phD_list['total']) %}
           <!--Grid column-->
           <div class="col-lg-4 col-md-6 col-sm-12 p-3">
             <!--row-->
             <div class="row">
               <div class="col-3">
                 <img class="img-fluid z-depth-1-half"
-                     src="{{ url_for('static', filename='img/person/' + alumni_phD_list['image'][idx]) }}">
+                     src="./static/img/person/이경주.jpg">
               </div>
               <div class="col-1">
                 <i class="fas fa-user fa-2x indigo-text"></i>
               </div>
               <div class="col-7">
-                <h3 class="feature-title">{{alumni_phD_list['name'][idx]}}</h3>
-                <p class="grey-text">{{alumni_phD_list['position'][idx]}}</p>
+                <h3 class="feature-title">이경주</h3>
+                <p class="grey-text">LG Display</p>
               </div>
             </div>
             <!--/row-->
           </div>
           <!--/Grid column-->
-          {% endfor %}
+
+
+
+                      <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+            <!--row-->
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid z-depth-1-half"
+                     src="./static/img/person/김설호.jpg">
+              </div>
+              <div class="col-1">
+                <i class="fas fa-user fa-2x indigo-text"></i>
+              </div>
+              <div class="col-7">
+                <h3 class="feature-title">김설호</h3>
+                <p class="grey-text">오스템임플란트</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+
+
+
+                      <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+            <!--row-->
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid z-depth-1-half"
+                     src="./static/img/person/박영재.jpg">
+              </div>
+              <div class="col-1">
+                <i class="fas fa-user fa-2x indigo-text"></i>
+              </div>
+              <div class="col-7">
+                <h3 class="feature-title">박영재</h3>
+                <p class="grey-text">아이에프소프트</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+
+
+
+                      <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+            <!--row-->
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid z-depth-1-half"
+                     src="./static/img/person/장효종.jpg">
+              </div>
+              <div class="col-1">
+                <i class="fas fa-user fa-2x indigo-text"></i>
+              </div>
+              <div class="col-7">
+                <h3 class="feature-title">장효종</h3>
+                <p class="grey-text">Drexel University, USA</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+            <!--row-->
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid z-depth-1-half"
+                     src="./static/img/person/이나영.jpg">
+              </div>
+              <div class="col-1">
+                <i class="fas fa-user fa-2x indigo-text"></i>
+              </div>
+              <div class="col-7">
+                <h3 class="feature-title">이나영</h3>
+                <p class="grey-text">Editorial Board Member - International Journal of Image Processing, USA</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
         </div>
         <!--/Grid row-->
       </section>
       <!--/Section: Alumni phD-->
 
       <!--Section: Alumni M.S-->
-      <section>
 
-        <h4 class="my-5 h4 text-left">M.S</h4>
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-          {% for idx in range(alumni_ms_list['total']) %}
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-            <!--row-->
-            <div class="row">
-              <div class="col-3">
-                <img class="img-fluid z-depth-1-half"
-                     src="{{ url_for('static', filename='img/person/' + alumni_ms_list['image'][idx]) }}">
-              </div>
-              <div class="col-1">
-                <i class="fas fa-user fa-2x indigo-text"></i>
-              </div>
-              <div class="col-7">
-                <h3 class="feature-title">{{alumni_ms_list['name'][idx]}}</h3>
-                <p class="grey-text">{{alumni_ms_list['position'][idx]}}</p>
-              </div>
-            </div>
-            <!--/row-->
-          </div>
-          <!--/Grid column-->
-          {% endfor %}
-        </div>
-        <!--/Grid row-->
-      </section>
       <!--/Section: Alumni M.S-->
 
     </div>
   </main>
   <!--Main layout-->
-{% endblock %}
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--/.Call to action-->
+    <hr class="my-3">
+
+    <!-- Social icons -->
+    <p><section style="user-select: auto;">
+
+        <h4 class="my-5 h4 text-left" style="user-select: auto;">M.S</h4>
+
+        <h4 class="my-5 h4 text-right" style="user-select: auto;">2022</h4>
+
+
+     <!--Grid row-->
+        <div class="row wow fadeIn" style="user-select: auto;">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/조승우.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">조승우</h3>
+                <p class="grey-text" style="user-select: auto;">넥스리얼</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+
+            <h4 class="my-5 h4 text-right" style="user-select: auto;">2021</h4>
+
+            <!--Grid row-->
+        <div class="row wow fadeIn" style="user-select: auto;">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/염리민.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">염리민</h3>
+                <p class="grey-text" style="user-select: auto;">NIO Inc.</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+         <!--Grid row-->
+        <div class="row wow fadeIn" style="user-select: auto;">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/최승욱.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">최승욱</h3>
+                <p class="grey-text" style="user-select: auto;">포디리플레이</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+
+        <h4 class="my-5 h4 text-right" style="user-select: auto;">2020</h4>
+
+
+        <!--Grid row-->
+        <div class="row wow fadeIn" style="user-select: auto;">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%86%A1%EB%88%84%EB%A6%AC.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">송누리</h3>
+                <p class="grey-text" style="user-select: auto;">현대오토에버</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%B5%9C%EC%9E%AC%EA%B0%91.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">최재갑</h3>
+                <p class="grey-text" style="user-select: auto;">(주)이지다이아텍</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EB%AC%B8%EC%A7%80%ED%99%98.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">문지환</h3>
+                <p class="grey-text" style="user-select: auto;">미래에셋증권</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+          <h4 class="my-5 h4 text-right" style="user-select: auto;">~ 2020</h4>
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%9D%B4%EC%82%AC%EB%AC%B4%EC%97%98.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">이사무엘</h3>
+                <p class="grey-text" style="user-select: auto;">고백기술</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%9C%A4%EC%84%B1%EC%A1%B0.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">윤성조</h3>
+                <p class="grey-text" style="user-select: auto;">텔레컨스</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EA%B9%80%EB%8C%80%EC%9C%A4.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">김대윤</h3>
+                <p class="grey-text" style="user-select: auto;">케이엘넷</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EA%B0%95%EC%9D%80%EC%A0%95.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">강은정</h3>
+                <p class="grey-text" style="user-select: auto;">메타넷엠씨씨</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EA%B9%80%EC%A7%84%EC%84%9C.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">김진서</h3>
+                <p class="grey-text" style="user-select: auto;">아이브스</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EA%B9%80%EA%B2%BD%EC%84%AD.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">김경섭</h3>
+                <p class="grey-text" style="user-select: auto;">LG디스플레이</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%9C%A4%EB%B3%91%ED%9B%88.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">윤병훈</h3>
+                <p class="grey-text" style="user-select: auto;">Immigration to Mexico</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%83%90%EB%A6%AC.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">샐리</h3>
+                <p class="grey-text" style="user-select: auto;">Vietnam</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%95%88%EA%B6%8C%EC%9E%AC.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">안권재</h3>
+                <p class="grey-text" style="user-select: auto;">인지소프트</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%ED%99%A9%EB%8C%80%EB%8F%99.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">황대동</h3>
+                <p class="grey-text" style="user-select: auto;">보성정보통신</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EA%B9%80%EC%83%81%ED%9D%AC.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">김상희</h3>
+                <p class="grey-text" style="user-select: auto;">삼성전기</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EA%B6%8C%EC%A3%BC%ED%98%95.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">권주형</h3>
+                <p class="grey-text" style="user-select: auto;">한미반도체</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%98%A8%EC%A7%84%EC%9A%B1.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">온진욱</h3>
+                <p class="grey-text" style="user-select: auto;">(주)다사테크</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%A0%95%EC%84%9D%ED%98%84.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">정석현</h3>
+                <p class="grey-text" style="user-select: auto;">삼성전자 VD사업부</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EA%B9%80%EB%A7%8C%EA%B8%B0.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">김만기</h3>
+                <p class="grey-text" style="user-select: auto;">(주)블라우비트</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 col-sm-12 p-3" style="user-select: auto;">
+            <!--row-->
+            <div class="row" style="user-select: auto;">
+              <div class="col-3" style="user-select: auto;">
+                <img class="img-fluid z-depth-1-half" src="/static/img/person/%EC%B5%9C%EC%A7%80%EC%88%98.jpg" style="user-select: auto;">
+              </div>
+              <div class="col-1" style="user-select: auto;">
+                <i class="fas fa-user fa-2x indigo-text" aria-hidden="true" style="user-select: auto;"></i>
+              </div>
+              <div class="col-7" style="user-select: auto;">
+                <h3 class="feature-title" style="user-select: auto;">최지수</h3>
+                <p class="grey-text" style="user-select: auto;">에스큐엔지니어링</p>
+              </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--/Grid column-->
+
+
+
+        </div>
+        <!--/Grid row-->
+      </section>
+        Computer Vision Lab, School of Software, Soongsil University<br>
+        서울특별시 동작구 사당로 50 (상도동, 숭실대학교 정보과학관) 21302호 TEL: 02-826-1087
+    </p>
+    <br></br>
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- FONTAWSOME -->
+  <script src="https://kit.fontawesome.com/b843fa0459.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <!-- Bootstrap tooltips -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>
+
+</html>
